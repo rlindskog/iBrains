@@ -9,33 +9,38 @@
 import UIKit
 import SenseSdk
 
+
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+    static var room: CustomGeofence!
+
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         // Enabled the SDK with the application key provided by Sense360
         SenseSdk.enableSdkWithKey("<your application key>")
         
-        // Fire when the user enters a restaurant
-        let restaurantTrigger = FireTrigger.whenEntersPoi(.Restaurant)!
+        AppDelegate.room = CustomGeofence(latitude: 37.376642, longitude: -121.921572, radius: 35, customIdentifier: "iosDevCamp room")
+        let geofenceTrigger: Trigger? = FireTrigger.whenEntersGeofences([AppDelegate.room])
+        
         
         // Recipe defines what trigger, what time of day and how long to wait between consecutive firings
-        let restaurantRecipe = Recipe(name: "ArrivedAtRestaurant",
-            trigger: restaurantTrigger,
+        let roomRecipe = Recipe(name: "Arrived in Room2",
+            trigger: geofenceTrigger!,
             
             // Do NOT restrict the firing to a particular time of day
             timeWindow: TimeWindow.allDay,
             
             // Wait at least 1 hour between consecutive trigger firings.
-            cooldown: Cooldown.create(oncePer: 1, frequency: CooldownTimeUnit.Hours)!)
+            cooldown: Cooldown.create(oncePer: 1, frequency: CooldownTimeUnit.Testing)!)
         
         let callback = EnteredRestaurantCallback()
         
+        
         // register the unique recipe and specify that when the trigger fires it should call our own "onTriggerFired" method below
-        SenseSdk.register(recipe: restaurantRecipe, delegate: callback)
+        SenseSdk.register(recipe: roomRecipe, delegate: callback)
         return true
     }
 
