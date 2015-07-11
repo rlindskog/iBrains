@@ -13,6 +13,7 @@
 		810C026E1B51C0350046BA83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 810C026D1B51C0350046BA83 /* Images.xcassets */; };
 		810C02711B51C0350046BA83 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810C026F1B51C0350046BA83 /* LaunchScreen.xib */; };
 		810C027D1B51C0350046BA83 /* iBrainsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C027C1B51C0350046BA83 /* iBrainsTests.swift */; };
+		810C02871B51D2260046BA83 /* EnteredRestaurantCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C02861B51D2260046BA83 /* EnteredRestaurantCallback.swift */; };
 		CA4C996E1B51C2630077CA15 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C996D1B51C2630077CA15 /* CoreLocation.framework */; };
 		CA4C99701B51C2750077CA15 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C996F1B51C2750077CA15 /* CoreMotion.framework */; };
 		CA4C99721B51C2840077CA15 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C99711B51C2840077CA15 /* libz.dylib */; };
@@ -57,6 +58,7 @@
 		810C02761B51C0350046BA83 /* iBrainsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBrainsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		810C027B1B51C0350046BA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		810C027C1B51C0350046BA83 /* iBrainsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBrainsTests.swift; sourceTree = "<group>"; };
+		810C02861B51D2260046BA83 /* EnteredRestaurantCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnteredRestaurantCallback.swift; sourceTree = "<group>"; };
 		CA4C996B1B51C1D50077CA15 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenseSdk.framework; path = "../Downloads/Sense360StarterSwift-master/Sense360Starter/SenseSdk.framework"; sourceTree = "<group>"; };
 		CA4C996D1B51C2630077CA15 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CA4C996F1B51C2750077CA15 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -122,6 +124,7 @@
 				810C026D1B51C0350046BA83 /* Images.xcassets */,
 				810C026F1B51C0350046BA83 /* LaunchScreen.xib */,
 				810C02641B51C0350046BA83 /* Supporting Files */,
+				810C02861B51D2260046BA83 /* EnteredRestaurantCallback.swift */,
 			);
 			path = iBrains;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810C02871B51D2260046BA83 /* EnteredRestaurantCallback.swift in Sources */,
 				810C02691B51C0350046BA83 /* ViewController.swift in Sources */,
 				810C02671B51C0350046BA83 /* AppDelegate.swift in Sources */,
 			);

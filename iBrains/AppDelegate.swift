@@ -7,15 +7,35 @@
 //
 
 import UIKit
+import SenseSdk
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Enabled the SDK with the application key provided by Sense360
+        SenseSdk.enableSdkWithKey("<your application key>")
+        
+        // Fire when the user enters a restaurant
+        let restaurantTrigger = FireTrigger.whenEntersPoi(.Restaurant)!
+        
+        // Recipe defines what trigger, what time of day and how long to wait between consecutive firings
+        let restaurantRecipe = Recipe(name: "ArrivedAtRestaurant",
+            trigger: restaurantTrigger,
+            
+            // Do NOT restrict the firing to a particular time of day
+            timeWindow: TimeWindow.allDay,
+            
+            // Wait at least 1 hour between consecutive trigger firings.
+            cooldown: Cooldown.create(oncePer: 1, frequency: CooldownTimeUnit.Hours)!)
+        
+        let callback = EnteredRestaurantCallback()
+        
+        // register the unique recipe and specify that when the trigger fires it should call our own "onTriggerFired" method below
+        SenseSdk.register(recipe: restaurantRecipe, delegate: callback)
         return true
     }
 

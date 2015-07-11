@@ -5,23 +5,23 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4F9B2EAF-D9E3-4CE6-9A19-859FC94C6D5A</string>
+	<string>FF7F3BE7-3D21-4426-9C4F-5597D06C81AD</string>
 	<key>IDESourceControlProjectName</key>
-	<string>iBrains</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D32CB9F91086A032BCF6BDA1777F4ED1C7871C61</key>
-		<string>https://github.com/rlindskog/iBrains</string>
+		<string>https://github.com/rlindskog/iBrains.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iBrains.xcodeproj</string>
+	<string>iBrains.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D32CB9F91086A032BCF6BDA1777F4ED1C7871C61</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/rlindskog/iBrains</string>
+	<string>https://github.com/rlindskog/iBrains.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
