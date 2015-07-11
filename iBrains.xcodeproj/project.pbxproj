@@ -13,6 +13,13 @@
 		810C026E1B51C0350046BA83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 810C026D1B51C0350046BA83 /* Images.xcassets */; };
 		810C02711B51C0350046BA83 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810C026F1B51C0350046BA83 /* LaunchScreen.xib */; };
 		810C027D1B51C0350046BA83 /* iBrainsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C027C1B51C0350046BA83 /* iBrainsTests.swift */; };
+		CA4C996E1B51C2630077CA15 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C996D1B51C2630077CA15 /* CoreLocation.framework */; };
+		CA4C99701B51C2750077CA15 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C996F1B51C2750077CA15 /* CoreMotion.framework */; };
+		CA4C99721B51C2840077CA15 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C99711B51C2840077CA15 /* libz.dylib */; };
+		CA4C99741B51C28E0077CA15 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C99731B51C28E0077CA15 /* SystemConfiguration.framework */; };
+		CA4C99791B51C33A0077CA15 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C99781B51C33A0077CA15 /* SenseSdk.framework */; };
+		CA4C997A1B51C3440077CA15 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C99781B51C33A0077CA15 /* SenseSdk.framework */; };
+		CA4C997B1B51C3440077CA15 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C99781B51C33A0077CA15 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +32,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CA4C997C1B51C3440077CA15 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA4C997B1B51C3440077CA15 /* SenseSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		810C02611B51C0350046BA83 /* iBrains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBrains.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		810C02651B51C0350046BA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +57,12 @@
 		810C02761B51C0350046BA83 /* iBrainsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBrainsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		810C027B1B51C0350046BA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		810C027C1B51C0350046BA83 /* iBrainsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBrainsTests.swift; sourceTree = "<group>"; };
+		CA4C996B1B51C1D50077CA15 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenseSdk.framework; path = "../Downloads/Sense360StarterSwift-master/Sense360Starter/SenseSdk.framework"; sourceTree = "<group>"; };
+		CA4C996D1B51C2630077CA15 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CA4C996F1B51C2750077CA15 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		CA4C99711B51C2840077CA15 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CA4C99731B51C28E0077CA15 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CA4C99781B51C33A0077CA15 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +70,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4C99791B51C33A0077CA15 /* SenseSdk.framework in Frameworks */,
+				CA4C99741B51C28E0077CA15 /* SystemConfiguration.framework in Frameworks */,
+				CA4C997A1B51C3440077CA15 /* SenseSdk.framework in Frameworks */,
+				CA4C99721B51C2840077CA15 /* libz.dylib in Frameworks */,
+				CA4C99701B51C2750077CA15 /* CoreMotion.framework in Frameworks */,
+				CA4C996E1B51C2630077CA15 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +92,12 @@
 		810C02581B51C0350046BA83 = {
 			isa = PBXGroup;
 			children = (
+				CA4C99781B51C33A0077CA15 /* SenseSdk.framework */,
+				CA4C99731B51C28E0077CA15 /* SystemConfiguration.framework */,
+				CA4C99711B51C2840077CA15 /* libz.dylib */,
+				CA4C996F1B51C2750077CA15 /* CoreMotion.framework */,
+				CA4C996D1B51C2630077CA15 /* CoreLocation.framework */,
+				CA4C996B1B51C1D50077CA15 /* SenseSdk.framework */,
 				810C02631B51C0350046BA83 /* iBrains */,
 				810C02791B51C0350046BA83 /* iBrainsTests */,
 				810C02621B51C0350046BA83 /* Products */,
@@ -122,6 +161,8 @@
 				810C025D1B51C0350046BA83 /* Sources */,
 				810C025E1B51C0350046BA83 /* Frameworks */,
 				810C025F1B51C0350046BA83 /* Resources */,
+				CA4C997C1B51C3440077CA15 /* Embed Frameworks */,
+				CA4C997D1B51C3E80077CA15 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -161,6 +202,11 @@
 				TargetAttributes = {
 					810C02601B51C0350046BA83 = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					810C02751B51C0350046BA83 = {
 						CreatedOnToolsVersion = 6.4;
@@ -206,6 +252,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA4C997D1B51C3E80077CA15 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# http://ikennd.ac/blog/2015/02/stripping-unwanted-architectures-from-dynamic-libraries-in-xcode/\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n# This script strips unused architectures\nfind \"$APP_PATH\" -name 'SenseSdk.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\nEXTRACTED_ARCHS=()\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		810C025D1B51C0350046BA83 /* Sources */ = {
@@ -340,6 +402,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/brandon/Downloads/Sense360StarterSwift-master/Sense360Starter",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iBrains/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +417,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/brandon/Downloads/Sense360StarterSwift-master/Sense360Starter",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iBrains/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +481,7 @@
 				810C02821B51C0350046BA83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		810C02831B51C0350046BA83 /* Build configuration list for PBXNativeTarget "iBrainsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +490,7 @@
 				810C02851B51C0350046BA83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
