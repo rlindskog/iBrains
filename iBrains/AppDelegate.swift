@@ -41,6 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // register the unique recipe and specify that when the trigger fires it should call our own "onTriggerFired" method below
         SenseSdk.register(recipe: roomRecipe, delegate: callback)
+		
+		let mainGameObject = iBrainsGame()
+		mainGameObject.startGame()
+		
         return true
     }
 
