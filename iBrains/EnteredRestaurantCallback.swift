@@ -8,6 +8,7 @@
 
 import Foundation
 import SenseSdk
+import Parse
 
 class EnteredRestaurantCallback: RecipeFiredDelegate {
     @objc func recipeFired(args: RecipeFiredArgs) {

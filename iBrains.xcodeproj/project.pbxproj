@@ -24,6 +24,10 @@
 		C82C851E1B51FCB500A244C4 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82C851D1B51FCB500A244C4 /* GameKit.framework */; };
 		C82C85201B51FD7D00A244C4 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82C851F1B51FD7D00A244C4 /* MultipeerConnectivity.framework */; };
 		C82C85221B52023300A244C4 /* iBrainsGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C85211B52023300A244C4 /* iBrainsGame.swift */; };
+		C82C85251B5211C500A244C4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82C85231B5211C500A244C4 /* Bolts.framework */; };
+		C82C85261B5211C500A244C4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82C85241B5211C500A244C4 /* Parse.framework */; };
+		C82C85281B52127F00A244C4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C82C85271B52127F00A244C4 /* libsqlite3.dylib */; };
+		C82C852A1B5212ED00A244C4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82C85291B5212ED00A244C4 /* AudioToolbox.framework */; };
 		CA4C996E1B51C2630077CA15 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C996D1B51C2630077CA15 /* CoreLocation.framework */; };
 		CA4C99701B51C2750077CA15 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C996F1B51C2750077CA15 /* CoreMotion.framework */; };
 		CA4C99721B51C2840077CA15 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4C99711B51C2840077CA15 /* libz.dylib */; };
@@ -81,6 +85,10 @@
 		C82C851D1B51FCB500A244C4 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		C82C851F1B51FD7D00A244C4 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		C82C85211B52023300A244C4 /* iBrainsGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iBrainsGame.swift; sourceTree = "<group>"; };
+		C82C85231B5211C500A244C4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../Downloads/parse-library-1.7.5/Bolts.framework"; sourceTree = "<group>"; };
+		C82C85241B5211C500A244C4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../Downloads/parse-library-1.7.5/Parse.framework"; sourceTree = "<group>"; };
+		C82C85271B52127F00A244C4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C82C85291B5212ED00A244C4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CA4C996D1B51C2630077CA15 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CA4C996F1B51C2750077CA15 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		CA4C99711B51C2840077CA15 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -93,6 +101,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82C852A1B5212ED00A244C4 /* AudioToolbox.framework in Frameworks */,
+				C82C85281B52127F00A244C4 /* libsqlite3.dylib in Frameworks */,
+				C82C85251B5211C500A244C4 /* Bolts.framework in Frameworks */,
+				C82C85261B5211C500A244C4 /* Parse.framework in Frameworks */,
 				C82C85201B51FD7D00A244C4 /* MultipeerConnectivity.framework in Frameworks */,
 				C82C851E1B51FCB500A244C4 /* GameKit.framework in Frameworks */,
 				CA4C99791B51C33A0077CA15 /* SenseSdk.framework in Frameworks */,
@@ -117,6 +129,10 @@
 		810C02581B51C0350046BA83 = {
 			isa = PBXGroup;
 			children = (
+				C82C85291B5212ED00A244C4 /* AudioToolbox.framework */,
+				C82C85271B52127F00A244C4 /* libsqlite3.dylib */,
+				C82C85231B5211C500A244C4 /* Bolts.framework */,
+				C82C85241B5211C500A244C4 /* Parse.framework */,
 				C82C851F1B51FD7D00A244C4 /* MultipeerConnectivity.framework */,
 				C82C851D1B51FCB500A244C4 /* GameKit.framework */,
 				CA4C99781B51C33A0077CA15 /* SenseSdk.framework */,
@@ -453,6 +469,7 @@
 					"$(inherited)",
 					"/Users/brandon/Downloads/Sense360StarterSwift-master/Sense360Starter",
 					"$(PROJECT_DIR)",
+					"/Users/mark.griffith/Downloads/parse-library-1.7.5",
 				);
 				INFOPLIST_FILE = iBrains/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -471,6 +488,7 @@
 					"$(inherited)",
 					"/Users/brandon/Downloads/Sense360StarterSwift-master/Sense360Starter",
 					"$(PROJECT_DIR)",
+					"/Users/mark.griffith/Downloads/parse-library-1.7.5",
 				);
 				INFOPLIST_FILE = iBrains/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
