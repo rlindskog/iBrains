@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>FF7F3BE7-3D21-4426-9C4F-5597D06C81AD</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>iBrains</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D32CB9F91086A032BCF6BDA1777F4ED1C7871C61</key>
 		<string>https://github.com/rlindskog/iBrains.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iBrains.xcodeproj/project.xcworkspace</string>
+	<string>iBrains.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D32CB9F91086A032BCF6BDA1777F4ED1C7871C61</key>
