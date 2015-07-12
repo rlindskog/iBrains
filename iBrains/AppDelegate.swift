@@ -9,15 +9,35 @@
 import UIKit
 import SenseSdk
 
+import CoreLocation
+import Parse
+import Foundation
+import Bolts
+
 
 @UIApplicationMain
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
     static var room: CustomGeofence!
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    
+    
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions:   [NSObject: AnyObject]?) -> Bool {
+        
+        // [Optional] Power your app with Local Datastore. For more info, go to
+        // https://parse.com/docs/ios_guide#localdatastore/iOS
+        Parse.enableLocalDatastore()
+        
+        // Initialize Parse.
+        Parse.setApplicationId("4iST4EECCOHVZJSGx8YreP15h4ixjCEK5hgthOic",
+            clientKey: "1d73qgGnjDYJwcbidFOCERqIGKhNo2IDQiJYXG3a")
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        // ...
+        
         
         // Enabled the SDK with the application key provided by Sense360
         SenseSdk.enableSdkWithKey("<your application key>")

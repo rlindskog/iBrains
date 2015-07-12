@@ -9,7 +9,7 @@
 import UIKit
 
 import SenseSdk
-
+import Parse
 
 class ViewController: UIViewController {
     //70 ft radius 37.376642, -121.921572
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         // This method should only be used for testing
         SenseSdkTestUtility.fireTrigger(
             fromRecipe: "Arrived in Room2",
-            confidenceLevel: ConfidenceLevel.Medium,
+            confidenceLevel: ConfidenceLevel.High,
             places: [AppDelegate.room],
             errorPtr: errorPointer
         )
@@ -29,16 +29,16 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    
-    
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.enteredRoom()
+        
+        let testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            println("Object has been saved.")
+        }
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
