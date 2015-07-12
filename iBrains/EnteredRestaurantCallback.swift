@@ -22,19 +22,21 @@ class EnteredRestaurantCallback: RecipeFiredDelegate {
                 
                 //post to parse
                 let myPlace = place as! CustomGeofence
-                
-                var user = PFUser()
-                user["username"] = "Ryan Lindskog"
-                user["infected"] = false
-                user["location"] = "\(myPlace)"
-                user.saveInBackgroundWithBlock {
-                    (success: Bool, error: NSError?) -> Void in
-                    if (success) {
-                        // The object has been saved.
-                    } else {
-                        // There was a problem, check error.description
-                    }
-                }
+                var myPlaceStr = "\(myPlace)"
+                    //iBrainsGame.sharedInstance.user
+                    iBrainsGame.sharedInstance.enteredRoom(myPlaceStr)
+  //              var user = PFUser()
+//                user["username"] = "Ryan Lindskog"
+//                user["infected"] = false
+//                user["location"] = "\(myPlace)"
+//                user.saveInBackgroundWithBlock {
+//                    (success: Bool, error: NSError?) -> Void in
+//                    if (success) {
+//                        // The object has been saved.
+//                    } else {
+//                        // There was a problem, check error.description
+//                    }
+//                }
                 
                 println(myPlace)
                 
