@@ -19,6 +19,28 @@ class EnteredRestaurantCallback: RecipeFiredDelegate {
         for trigger in args.triggersFired {
             for place in trigger.places {
                 NSLog(place.description)
+                
+                //post to parse
+                let myPlace = place as! CustomGeofence
+                
+                var user = PFUser()
+                user["username"] = "Ryan Lindskog"
+                user["infected"] = false
+                user["location"] = "\(myPlace)"
+                user.saveInBackgroundWithBlock {
+                    (success: Bool, error: NSError?) -> Void in
+                    if (success) {
+                        // The object has been saved.
+                    } else {
+                        // There was a problem, check error.description
+                    }
+                }
+                
+                println(myPlace)
+                
+//                println(myPlace.name)
+//                println(myPlace.location)
+                
             }
         }
     }
