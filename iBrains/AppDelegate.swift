@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Enabled the SDK with the application key provided by Sense360
         SenseSdk.enableSdkWithKey("<your application key>")
         
-        AppDelegate.room = CustomGeofence(latitude: 37.376642, longitude: -121.921572, radius: 35, customIdentifier: "iosDevCamp room")
+        AppDelegate.room = CustomGeofence(latitude: 37.376642, longitude: -121.921572, radius: 35, customIdentifier: "place")
         let geofenceTrigger: Trigger? = FireTrigger.whenEntersGeofences([AppDelegate.room])
         
         
